@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="
+            default-src *;
+            style-src * 'unsafe-inline';
+            script-src * 'unsafe-inline';
+            media-src *; img-src * data:;" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/style-1.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="https://assets.onestore.ms/cdnfiles/external/webcore/4.9.0/stylesheets/WebCore.4.9.0.ltr.light.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script type="text/javascript" src="js/index.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="dialog-element">
+                    <div id="controls">
+                        <label class="label" for="my-text">Data Location set at Cal Poly Pomona. Say "Random" for a quick response</label>
+                        <br>
+                        <input type="text" id="my-text" readonly="readonly" />
+                        <select id="languageSelect">
+                            <option value="English" selected>English</option>
+                    </select>
+                  <br />
+                    <input type="text" id="my-respond" />
+                  </div>
+                  </div>
+                  <div class="dialog-element">
+                    <button class="btn-primary" style="display: none;" id="genderButton">Let's eat!</button>
+                  </div>
+                </div>
+                <div class="dialog-element">
+                </div>
+    <title>Food AI</title>
+    </head>
+
+    <body>
+      <div id="container"></div>
+        <div class='footer'>
+</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/dependencies/jquery.js"></script>
+        <script type="text/javascript" src="js/dependencies/jquery.wait.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/recorder.js"></script>
+        <script type="text/javascript" src="js/dependencies/hashtable.js"></script>
+        <script type="text/javascript" src="js/speech.js"></script>
+        <script type="text/javascript" src="js/apicalls.js"></script>
+
+
+    </body>
+
+</html>
